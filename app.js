@@ -123,7 +123,7 @@ app.post('/webhook', (req, res) => {
 
         // parse messaging array
         const webhook_events = body.entry[0];
-
+        console.log(webhook_events)
   // initialize quick reply properties
         let text, title, payload;
 
