@@ -154,7 +154,7 @@ app.post('/webhook', (req, res) => {
                         // Get the sender PSID
                         let sender_psid = psid;
                         console.log(`Sender PSID: ${sender_psid}`);
-                        HandoverProtocol.takeThreadControl(psid);
+                      
               }
                 
 
