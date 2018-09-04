@@ -143,7 +143,7 @@ app.post('/webhook', (req, res) => {
                 payload = 'pass_to_inbox';
 
                 sendQuickReply(psid, text, title, payload);
-               // HandoverProtocol.takeThreadControl(psid);
+                HandoverProtocol.takeThreadControl(psid);
               } else {
               
             // Gets the body of the webhook event
@@ -154,7 +154,7 @@ app.post('/webhook', (req, res) => {
                         // Get the sender PSID
                         let sender_psid = psid;
                         console.log(`Sender PSID: ${sender_psid}`);
-              
+                        HandoverProtocol.takeThreadControl(psid);
               }
                 
 
